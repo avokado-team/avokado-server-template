@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# 필요한 시스템 패키지 설치
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    # Linux의 경우
+    sudo apt-get update
+    sudo apt-get install -y libpq-dev python3-dev
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+    # macOS의 경우
+    brew install postgresql
+fi
+
 # pyenv 설치
 if ! command -v pyenv &> /dev/null
 then

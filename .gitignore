@@ -1,0 +1,47 @@
+# Python 관련
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# 환경 설정 관련
+*.env
+*.local
+
+# Django 관련
+*.log
+db.sqlite3
+db.sqlite3-journal
+
+# 미디어 파일
+media/
+staticfiles/
+static/
+
+# IDE 관련
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# 운영체제 관련
+.DS_Store
+Thumbs.db
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pycharm
+*.idea
+*.sublime-project
+*.sublime-workspace
+.idea/
+

@@ -4,7 +4,9 @@
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     # Linux의 경우
     sudo apt-get update
-    sudo apt-get install -y libpq-dev python3-dev
+    sudo apt-get install -y gcc make libpq-dev python3-dev
+    sudo apt-get install -y libsqlite3-dev
+    sudo apt-get install -y build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev curl libbz2-dev
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     # macOS의 경우
     brew install postgresql
@@ -69,7 +71,7 @@ pyenv activate $project_name
 pip install pipenv
 
 # 필요한 패키지 설치
-pipenv install django djangorestframework gunicorn uvicorn psycopg2
+pipenv install django djangorestframework gunicorn uvicorn psycopg2 factory_boy
 
 # black과 isort 설치
 pipenv install --dev black isort

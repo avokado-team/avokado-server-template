@@ -6,8 +6,8 @@ on:
     branches:
       - '**'
 env:
-  python-still-minor-version: '3.12'
-  python-version: '3.12.4'
+  python-still-minor-version: '3.11'
+  python-version: '3.11.9'
   cache-version: 1
 
 jobs:

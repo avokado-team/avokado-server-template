@@ -5,7 +5,7 @@
 현재 제공하는 기능은 다음과 같습니다.
 1. pyenv 설치 및 pyenv 로 특정 python 설치
 2. pyenv-virtualenv 설치 및 가상환경 설정
-3. 기본 패키지 설치 (django, psycopg2, gunicorn, uvicorn)
+3. 기본 패키지 설치 (django, psycopg2, gunicorn, uvicorn, factory_boy)
 4. 기본 개발 패키지 설치 (black, isort)
 5. django 프로젝트 활성화
 6. 기본 db migrate

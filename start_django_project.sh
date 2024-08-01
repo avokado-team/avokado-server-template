@@ -71,10 +71,10 @@ pyenv activate $project_name
 pip install pipenv
 
 # 필요한 패키지 설치
-pipenv install django djangorestframework gunicorn uvicorn psycopg2 factory_boy
+pipenv install
 
 # black과 isort 설치
-pipenv install --dev black isort
+pipenv install --dev
 
 # Django 프로젝트 생성
 pipenv run django-admin startproject $project_name .
